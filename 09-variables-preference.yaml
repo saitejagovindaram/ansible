@@ -5,13 +5,13 @@
   vars:
     myVar: "PLAY"
     msg: "Hello from PLAY variables"
-  vars_prompt:
-    - name: myVar
-      prompt: Enter myVar
-      private: false
-    - name: msg
-      prompt: Enter msg
-      private: false
+  # vars_prompt:
+  #   - name: myVar
+  #     prompt: Enter myVar
+  #     private: false
+  #   - name: msg
+  #     prompt: Enter msg
+  #     private: false
   # vars_files:
   #   - variablefile.yaml
   tasks:
@@ -21,3 +21,5 @@
 
 #1. CMD
 #2. File
+#3. prompt
+
