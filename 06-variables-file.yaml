@@ -3,7 +3,7 @@
 - name: variables from play
   hosts: localhost
   vars_files:
-    - variablefile.yml
+    - variablefile.yaml
   tasks:
     - name: play1 task1
       ansible.builtin.debug:
