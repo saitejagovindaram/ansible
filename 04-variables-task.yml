@@ -1,0 +1,13 @@
+---
+- name: variables from play
+  hosts: localhost
+  vars:
+    myVar: "PLAY"
+    msg: "Hello from PLAY variables"
+  tasks:
+    - name: play1 task1
+      vars:
+        myVar: "TASK"
+        msg: "Hello from Task Variables"
+      ansible.builtin.debug:
+        msg: "I am coming from {{myVar}}, {{msg}}"
