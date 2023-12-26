@@ -5,7 +5,7 @@
   vars:
     myVar: "PLAY"
     msg: "Hello from PLAY variables"
-  vars_promt:
+  vars_prompt:
     - name: myVar
       prompt: Enter myVar
       private: false
