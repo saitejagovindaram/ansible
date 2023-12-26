@@ -12,9 +12,12 @@
     - name: msg
       prompt: Enter msg
       private: false
-  vars_files:
-    - variablefile.yaml
+  # vars_files:
+  #   - variablefile.yaml
   tasks:
     - name: play1 task1
       ansible.builtin.debug:
         msg: "I am coming from {{myVar}}, {{msg}}"
+
+#1. CMD
+#2. File
