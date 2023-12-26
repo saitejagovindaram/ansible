@@ -1,3 +1,4 @@
+#variables from task
 ---
 - name: variables from play
   hosts: localhost

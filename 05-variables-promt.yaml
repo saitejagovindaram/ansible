@@ -1,0 +1,16 @@
+#Variables from Prompt
+---
+- name: variables from play
+  hosts: localhost
+  vars_prompt:
+    - name: myVar
+      prompt: "Enter myVar"
+      privacy: false
+    - name: msg
+      prompt: Enter msg
+      privacy: false
+
+  tasks:
+    - name: play1 task1
+      ansible.builtin.debug:
+        msg: "I am coming from {{myVar}}, {{msg}}"
