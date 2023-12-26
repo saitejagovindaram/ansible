@@ -1,7 +1,7 @@
 #Variables from Inventory
 ---
 - name: variables from play
-  hosts: varsDemo
+  hosts: localhost
   tasks:
     - name: play1 task1
       ansible.builtin.debug:
