@@ -9,7 +9,7 @@
       ansible.builtin.debug:
         msg: "I am leaning AWS too.."
 
-- name: play1
+- name: play2
   hosts: localhost
   tasks:
     - name: play1 task1
