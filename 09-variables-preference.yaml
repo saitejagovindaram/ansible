@@ -16,6 +16,9 @@
   #   - variablefile.yaml
   tasks:
     - name: play1 task1
+      vars:
+        myVar: Task
+        msg: I am from TAsk
       ansible.builtin.debug:
         msg: "I am coming from {{myVar}}, {{msg}}"
 
