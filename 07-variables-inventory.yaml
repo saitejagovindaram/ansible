@@ -1,0 +1,8 @@
+#Variables from Inventory
+---
+- name: variables from play
+  hosts: localhost
+  tasks:
+    - name: play1 task1
+      ansible.builtin.debug:
+        msg: "I am coming from {{myVar}}, {{msg}}"
