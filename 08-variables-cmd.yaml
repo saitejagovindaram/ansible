@@ -1,7 +1,6 @@
-#Variables from Inventory
 ---
-- name: variables from inventory
-  hosts: varsDemo  #give localhost as well
+- name: variables from cmd
+  hosts: localhost
   tasks:
     - name: play1 task1
       ansible.builtin.debug:

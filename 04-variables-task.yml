@@ -1,6 +1,6 @@
 #variables from task
 ---
-- name: variables from play
+- name: variables from task
   hosts: localhost
   vars:
     myVar: "PLAY"

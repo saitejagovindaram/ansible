@@ -1,6 +1,6 @@
 #Variables from Prompt
 ---
-- name: variables from play
+- name: variables from prompt
   hosts: localhost
   vars_prompt:
     - name: myVar

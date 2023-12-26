@@ -1,6 +1,6 @@
 #Variables from files
 ---
-- name: variables from play
+- name: variables from file
   hosts: localhost
   vars_files:
     - variablefile.yaml
