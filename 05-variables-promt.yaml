@@ -5,10 +5,10 @@
   vars_prompt:
     - name: myVar
       prompt: "Enter myVar"
-      privacy: false
+      private: false
     - name: msg
       prompt: Enter msg
-      privacy: false
+      private: false
 
   tasks:
     - name: play1 task1
