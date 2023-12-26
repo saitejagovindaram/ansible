@@ -6,7 +6,7 @@
       ansible.builtin.debug:
         msg: "I am leaning DevOps"
     - name: play1 task2
-      ansible.builting.debug:
+      ansible.builtin.debug:
         msg: "I am leaning AWS too.."
 
 - name: play1
