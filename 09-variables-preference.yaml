@@ -2,9 +2,9 @@
 ---
 - name: variables from play
   hosts: localhost
-  vars:
-    myVar: "PLAY"
-    msg: "Hello from PLAY variables"
+  # vars:
+  #   myVar: "PLAY"
+  #   msg: "Hello from PLAY variables"
   # vars_prompt:
   #   - name: myVar
   #     prompt: Enter myVar
@@ -16,13 +16,15 @@
   #   - variablefile.yaml
   tasks:
     - name: play1 task1
-      vars:
-        myVar: Task
-        msg: I am from TAsk
+      # vars:
+      #   myVar: Task
+      #   msg: I am from TAsk
       ansible.builtin.debug:
         msg: "I am coming from {{myVar}}, {{msg}}"
 
 #1. CMD
-#2. File
-#3. prompt
+#2. Task
+#3. File
+#4. prompt
+#5. Play
 
