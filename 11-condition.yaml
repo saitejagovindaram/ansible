@@ -2,6 +2,7 @@
 
 - name: play1-conditions
   hosts: localhost
+  become: yes
   tasks:
     - name: check user
       ansible.builtin.command: id roboshop
