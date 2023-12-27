@@ -1,0 +1,11 @@
+---
+
+- name: play1-conditions
+  hosts: localhost
+  tasks:
+    - name: check user
+      ansible.builtin.command: id roboshop
+      register: myUser
+    - name: print myUser
+      ansible.builtin.debug:
+        msg: "User details: {{myUser}}"
