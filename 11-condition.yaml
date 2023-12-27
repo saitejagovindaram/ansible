@@ -10,3 +10,7 @@
     - name: print myUser
       ansible.builtin.debug:
         msg: "User details: {{myUser}}"
+    - name: create user
+      ansible.builtin.user:
+        Name: roboshop
+      when: myUser.rc != 0
