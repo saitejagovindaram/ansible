@@ -12,5 +12,5 @@
         msg: "User details: {{myUser}}"
     - name: create user
       ansible.builtin.user:
-        Name: roboshop
+        name: roboshop
       when: myUser.rc != 0
