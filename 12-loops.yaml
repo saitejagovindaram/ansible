@@ -1,0 +1,11 @@
+- name: loops-play
+  hosts: localhost
+  tasks:
+    - name: print citi names
+      ansible.builtin.debug:
+        msg: "{{item}}"
+      loop:
+        - hyderabad
+        - bangalore
+        - chennai
+        - mumbai
