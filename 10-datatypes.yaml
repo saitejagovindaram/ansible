@@ -1,0 +1,28 @@
+---
+- name: learning datatypes
+  hosts: localhost
+  vars:
+    Name: "saiteja"
+    cities:
+      - Hyd
+      - Bglr
+      - Chennai
+      - Delhi
+      - Mumbai
+      - Kolkata
+      - Ahmedabad
+    address:
+      colony: Gowthami nagar
+      town: Mancherial
+      district: Mancherial
+      state: Telangana
+  tasks:
+    - name: task1
+      ansible.builtin.debug:
+        msg: "{{Name}}"
+    - name: task2
+      ansible.builtin.debug:
+        msg: "{{cities}}"
+    - name: task3
+      ansible.builtin.debug:
+        msg: "{{address}}"
