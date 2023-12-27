@@ -1,5 +1,6 @@
 - name: loops-play
   hosts: localhost
+  become: yes
   tasks:
     - name: install packages
       ansible.builtin.package:
