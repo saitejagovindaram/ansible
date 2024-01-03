@@ -1,0 +1,17 @@
+- name: variable precedence hero to zero
+  hosts: testing-vars
+  become: yes
+  vars:
+    - message: I am from Play level variable
+  vars_files:
+    - variablefile.yaml
+  vars_prompt:
+    - name: message
+      prompt: Enter message
+      private: false
+  tasks:
+    - name: task1
+      vars:
+        - message: I am from task level variable
+      ansible.builtin.debug:
+        msg: "{{message}}"
