@@ -24,3 +24,4 @@
 # PROMPT
 # PLAY
 # host_vars--> testing
+# group_vars--> testing-vars
