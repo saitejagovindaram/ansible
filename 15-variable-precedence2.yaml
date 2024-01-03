@@ -26,3 +26,4 @@
 # host_vars--> testing
 # group_vars--> testing-vars
 # group_vars--> all
+# inventory file
