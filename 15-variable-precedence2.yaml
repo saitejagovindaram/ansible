@@ -1,10 +1,10 @@
 - name: variable precedence hero to zero
   hosts: testing-vars
   become: yes
-  vars:
-    - message: I am from Play level variable
-  vars_files:
-    - variablefile.yaml
+  # vars:
+  #   - message: I am from Play level variable
+  # vars_files:
+  #   - variablefile.yaml
   # vars_prompt:
   #   - name: message
   #     prompt: Enter message
@@ -22,3 +22,4 @@
 # TASK
 # variablefile.yaml which is at inventory level
 # PROMPT
+# PLAY
