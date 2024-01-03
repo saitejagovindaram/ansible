@@ -5,10 +5,10 @@
     - message: I am from Play level variable
   vars_files:
     - variablefile.yaml
-  vars_prompt:
-    - name: message
-      prompt: Enter message
-      private: false
+  # vars_prompt:
+  #   - name: message
+  #     prompt: Enter message
+  #     private: false
   tasks:
     - name: task1
       # vars:
@@ -21,3 +21,4 @@
 # CMD
 # TASK
 # variablefile.yaml which is at inventory level
+# PROMPT
