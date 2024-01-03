@@ -11,7 +11,12 @@
       private: false
   tasks:
     - name: task1
-      vars:
-        - message: I am from task level variable
+      # vars:
+      #   - message: I am from task level variable
       ansible.builtin.debug:
         msg: "{{message}}"
+
+
+
+# CMD
+# TASK
