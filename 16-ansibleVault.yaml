@@ -1,0 +1,7 @@
+- name: practicing ansible vault
+  hosts: ubuntu-grp
+  become: yes
+  tasks:
+    - name: printing vault file variables
+      ansible.builtin.debug:
+        msg: "{{myVar}}, {{msg}}, {{message}}"

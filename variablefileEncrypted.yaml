@@ -1,0 +1,3 @@
+myVar: "FILE"
+msg: "Hello, I am from File"
+message: "I am from variablefile.yaml which is at inventory level"
