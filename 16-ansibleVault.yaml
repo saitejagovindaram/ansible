@@ -7,3 +7,13 @@
     - name: printing vault file variables
       ansible.builtin.debug:
         msg: "{{myVar}}, {{msg}}, {{message}}"
+
+
+# ansible-playbook -i inventory.ini -e ansible_user="centos" -e ansible_ssh_private_key_file="/home/centos/practicekey.pem" 16-ansibleVault.yaml --ask-vault-pass
+# ansible-playbook -i inventory.ini 16-ansibleVault.yaml --ask-vault-pass
+
+
+# you can also mention ask_vault_pass=True, in ansible.cfg
+
+
+# We use SSM parameter store instead of ansible vault, we can assume it as AWS vault
