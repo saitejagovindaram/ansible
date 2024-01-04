@@ -1,5 +1,5 @@
 - name: practicing ansible vault
-  hosts: all
+  hosts: ubuntu-grp
   become: yes
   vars_files:
     - variablefileEncrypted.yaml
